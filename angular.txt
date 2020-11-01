@@ -1,0 +1,16 @@
+primero tenes que asegurarte de tener instalado node.js lo cual tambien deveria instalar npm 
+
+VERSION NODE
+npm --version 
+
+VERSION CLI 
+ng --version
+
+INSTALAR CLI (en caso de que no este instalado)
+npm install -g @angular/cli 
+
+CREAR PROYECTO
+ng new nombreDelProyecto
+
+LEVANTAR EL SERVER
+ng serve -o
