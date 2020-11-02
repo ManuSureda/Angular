@@ -1,9 +1,9 @@
-<h1>Welcome to {{ title }}</h1>
-<p>mira mi name bro: {{ name }}</p>
-<span>{{ fruits }}</span><!-- tomatoe,kiwi,orange,apple -->
-<ul>
-  <!-- va a recorrer fruits[] (el cual viene de app.components.ts) y lo carga en fruit -->
-  <li *ngFor="let fruit of fruits">{{ fruit }}</li>
-</ul>
-
-<span>student name is: {{ student.firstName }} {{ student.lastName }}</span>
+<!-- input output -->
+<div class="container">
+  <app-car-add [carList]="carList"></app-car-add>
+  <div class="p-3"></div>
+  <app-car-list [carList]="carList"
+    (selectedCarEvent)="showSelectedCar($event)"></app-car-list>
+  <div class="p-3"></div>
+  <h4>selected vehicle: {{car.brand}} {{car.model}}</h4>
+</div>

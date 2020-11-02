@@ -14,3 +14,6 @@ ng new nombreDelProyecto
 
 LEVANTAR EL SERVER
 ng serve -o
+
+CREAR UNA CLASS 
+ng generate class nombreCarpeta/nombreClass

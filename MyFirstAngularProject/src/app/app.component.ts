@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Student } from './models/student';
+import { Car } from './models/Car';
 
 @Component({
   selector: 'app-root',//asi se va a llamar el tag html
@@ -7,14 +7,11 @@ import { Student } from './models/student';
   styleUrls: ['./app.component.css']// el style
 })
 export class AppComponent {
-  title = 'My First Angular Project';//en el template podes acceder a esto como {{ title }} 
-  name = 'Manu jeje xd';
-  fruits = ['tomatoe','kiwi','orange','apple'];
-  student = new Student();
+  title = 'cars aplication example';
+  carList = new Array<Car>();
+  car = new Car();
 
-  constructor(){
-    //let student = new Student(); se ve que es mejor declararlo arriba
-    this.student.firstName = "juan";
-    this.student.lastName = "Gomez";
+  showSelectedCar(car : Car) {
+    this.car = car;
   }
 }
