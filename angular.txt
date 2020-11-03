@@ -26,3 +26,6 @@ buscas "stules": [
     "src/styles.css"
 ]
 tambien, aunque esto deberia hacerse automatico, en package.json deberia aparecen en dependencies: {en algun lado "bootstrap": y la version})
+
+ROUTING
+ng g module app-routing
