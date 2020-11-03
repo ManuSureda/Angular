@@ -2,6 +2,9 @@
     <h2>Add a car</h2>
     <div class="form-group">
         <label for="brand">Car Brand</label>
+        <!-- [(ngModel)]="brand" esta en el ts declarado como brand : string 
+        y sirve para que lo que escribas en ese input, se guarde en la variable del component.ts,
+        a su vez lo que modifiques en ts, se veria reflejado aca -->
         <input type="text" class="form-control"
             name="brand" id="brand" [(ngModel)]="brand" placeholder="Car Brand">
     </div>

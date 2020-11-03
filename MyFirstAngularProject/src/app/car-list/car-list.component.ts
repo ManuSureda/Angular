@@ -10,8 +10,8 @@ export class CarListComponent implements OnInit {
   @Input()
   carList : Array<Car> = new Array<Car>();
 
-  @Output()
-  selectedCarEvent = new EventEmitter<Car>();
+  @Output()//con esto haces un obcserbabl y con el emit de abajo le estas informando de que cambio algo
+  selectedCarEvent = new EventEmitter<Car>();//selectedCarEvent esta en el input del app.component.html
 
   constructor() { }
 
@@ -19,6 +19,6 @@ export class CarListComponent implements OnInit {
   }
 
   selectCar(car : Car){
-    this.selectedCarEvent.emit(car);
+    this.selectedCarEvent.emit(car);//esto nos devuelve al app.compounent que recibe un evento (el cual contiene car)
   }
 }

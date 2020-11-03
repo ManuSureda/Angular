@@ -11,7 +11,7 @@ export class AppComponent {
   carList = new Array<Car>();
   car = new Car();
 
-  showSelectedCar(car : Car) {
+  showSelectedCar(car : Car) {//esto nos llega del car-list por el eventemitter
     this.car = car;
   }
 }
