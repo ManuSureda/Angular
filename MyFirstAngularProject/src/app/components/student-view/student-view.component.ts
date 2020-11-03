@@ -11,12 +11,12 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class StudentViewComponent implements OnInit {
   private student: Student;
-
+                                                          //ActivatedRoute nos proveera la ruta tipo: www.hola.com/estoyaca/1
   constructor(private studentService: StudentService, private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {//la url (route) en este caso es: '...view/:id' por eso el get('id')
     let studentId = Number(this.route.snapshot.paramMap.get('id'));
-    
+
     this.student = this.studentService.getById(studentId);
   }
 
