@@ -17,3 +17,12 @@ ng serve -o
 
 CREAR UNA CLASS 
 ng generate class nombreCarpeta/nombreClass
+
+INSTALAR BOOSTRAP
+npm install bootstrap
+(despues tenes que ir al archivo "angular.json" 
+buscas "stules": [
+    "y aca agregas la ruta de donde se instalo", (por default creo q es: "node_modules/bootstrap/dist/css/bootstrap.min.css")
+    "src/styles.css"
+]
+tambien, aunque esto deberia hacerse automatico, en package.json deberia aparecen en dependencies: {en algun lado "bootstrap": y la version})
