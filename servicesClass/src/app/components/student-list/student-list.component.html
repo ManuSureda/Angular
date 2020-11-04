@@ -14,10 +14,10 @@
                 </thead>
                 <tbody>
                     <tr *ngFor="let student of studentList">
-                        <th scope="row"> {{ student.studentId }} </th>
-                        <td> {{ student. }} </td>
-                        <td> {{ student. }} </td>
-                        <td> {{ student. }} </td>
+                        <th scope="row">{{ student.studentId }}</th>
+                        <td>{{ student.firstName }}</td>
+                        <td>{{ student.lastName }}</td>
+                        <td>{{ student.email }}</td>
                         <td><a class="btn btn-success btn-sm" [routerLink]="['/view', student.studentId ]">View Details</a></td>
                     </tr>
                 </tbody>

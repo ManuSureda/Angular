@@ -8,7 +8,7 @@ import { StudentService } from 'src/app/services/student.service';
   styleUrls: ['./student-add.component.css']
 })
 export class StudentAddComponent implements OnInit {
-  @Input()
+
   firstName: string;
   lastName: string;
   dni: string;
