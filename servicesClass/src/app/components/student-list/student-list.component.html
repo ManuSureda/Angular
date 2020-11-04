@@ -13,7 +13,6 @@
                   </tr>
                 </thead>
                 <tbody>
-                    {{ studentList | json }}
                   <tr *ngFor="let student of studentList">
                     <th scope="row">{{ student.studentId  }}</th>
                     <td>{{student.firstName}}</td>

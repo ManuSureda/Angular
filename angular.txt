@@ -35,8 +35,21 @@ cuando trabajes con eso acordate de en el app.module.ts agregar :
 
 import { FormsModule } from '@angular/forms';//importante
 
-imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule//importante
+
+  @NgModule({
+  declarations: [
+    AppComponent,
+    PageNotFoundComponent,DECLARA CADA COMPONENTE
+    StudentAddComponent,DECLARA CADA COMPONENTE
+    StudentViewComponent,DECLARA CADA COMPONENTE
+    StudentListComponentDECLARA CADA COMPONENTE
   ],
+  imports: [
+    BrowserModule,
+    FormsModule,//<<<< import it here
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
