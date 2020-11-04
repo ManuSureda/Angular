@@ -29,3 +29,14 @@ tambien, aunque esto deberia hacerse automatico, en package.json deberia aparece
 
 ROUTING
 ng g module app-routing
+
+[(ngModel)]
+cuando trabajes con eso acordate de en el app.module.ts agregar :
+
+import { FormsModule } from '@angular/forms';//importante
+
+imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule//importante
+  ],

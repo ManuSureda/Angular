@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { CarAddComponent } from './car-add/car-add.component';
 import { CarListComponent } from './car-list/car-list.component';
 import { StudentAddComponent } from './components/student-add/student-add.component';
-import { StudentViewComponent } from './student-view/student-view.component';
+//import { StudentViewComponent } from './student-view/student-view.component';
 import { StudentListComponent } from './components/student-list/student-list.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
@@ -17,7 +17,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     CarAddComponent,
     CarListComponent,
     StudentAddComponent,
-    StudentViewComponent,
+    //StudentViewComponent,
     StudentListComponent,
     PageNotFoundComponent
   ],
