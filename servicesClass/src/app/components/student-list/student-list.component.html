@@ -16,9 +16,9 @@
                     {{ studentList | json }}
                   <tr *ngFor="let student of studentList">
                     <th scope="row">{{ student.studentId  }}</th>
-                    <th scope="row">{{ student.firstName }}</th>
-                    <th scope="row">{{ student.lastName }}</th>
-                    <th scope="row">{{ student.email }}</th>
+                    <td>{{student.firstName}}</td>
+                    <td>{{student.lastName}}</td>
+                    <td>{{student.email}}</td>
                     <td><a class="btn btn-success btn-sm" [routerLink]="['/view/', student.studentId ]">View Details</a></td>
                   </tr>                  
                 </tbody>
