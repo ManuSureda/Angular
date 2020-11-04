@@ -1,10 +1,9 @@
-import { NgModule              } from '@angular/core';
-import { RouterModule, Routes  } from '@angular/router';//modulo de ruteo base, mas la libreria Routes para manipular rutas
-import { StudentAddComponent   } from './components/student-add/student-add.component';
-import { StudentViewComponent  } from './components/student-view/student-view.component';
-import { StudentListComponent  } from './components/student-list/student-list.component';
+import { NgModule  } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';//modulo de ruteo base, mas la libreria Routes para manipular rutas
+import { StudentAddComponent } from './components/student-add/student-add.component';
+import { StudentViewComponent } from './components/student-view/student-view.component';
+import { StudentListComponent } from './components/student-list/student-list.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-//import { CommonModule } from '@angular/common';
 
 const appRoutes: Routes = [
   { path: 'add', component: StudentAddComponent },
@@ -18,7 +17,7 @@ const appRoutes: Routes = [
   imports: [
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // debugging purpose only
+      { enableTracing: false } // debugging purpose only
     )
   ],
   exports: [

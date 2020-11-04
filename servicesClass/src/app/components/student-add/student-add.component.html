@@ -1,44 +1,50 @@
 <main class="py-5">
     <section class="mb-5">
-        <form>
+         <form>
             <div class="container">
                 <h3 class="mb-3">Add Student</h3>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <label for="">Last Name</label>
-                        <!-- [(ngModel)]="lastName" esta en el ts declarado como lastName : string 
-                        y sirve para que lo que escribas en ese input, se guarde en la variable del component.ts,
-                        a su vez lo que modifiques en ts, se veria reflejado aca ya que es 2 way binding -->
-                        <input type="text" name="lastName" [(ngModel)]="lastName" class="form-control-ml" required value="">
+                <div class="bg-light p-4">
+                    <div class="row">                                                                         
+                        <div class="col-lg-4">
+                            <label for="">First Name</label>
+                            <input type="text" name="firstName" [(ngModel)]="firstName" class="form-control form-control-ml" required >
+                        </div>
+
+                        <div class="col-lg-4">
+                            <label for="">Last Name</label>
+                            <input type="text" name="lastName" [(ngModel)]="lastName" class="form-control form-control-ml" required >
+                        </div>
+
+                        <div class="col-lg-4">
+                            <label for="">DNI</label>
+                            <input type="text" name="dni" [(ngModel)]="dni" class="form-control form-control-ml" required >
+                        </div>
                     </div>
 
-                    <div class="col-lg-4">
-                        <label for="">First Name</label>
-                        <input type="text" name="firstName" [(ngModel)]="firstName" class="form-control-ml" required value="">
-                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <label for="">Email</label>
+                            <input type="email" name="email" [(ngModel)]="email" class="form-control form-control-ml" required >
+                        </div>
 
-                    <div class="col-lg-4">
-                        <label for="">Dni</label>
-                        <input type="text" name="dni" [(ngModel)]="dni" class="form-control-ml" required value="">
-                    </div>
+                        <div class="col-lg-8">
+                            <label for="">Address</label>
+                            <input type="text" name="address" [(ngModel)]="address" class="form-control form-control-ml" required >
+                        </div>
+                    </div> 
+                    {{ message }}
+                    {{ firstName }} 
+                    {{ lastName }} 
+                    {{ dni }} 
+                    {{ email }} 
+                    {{ address }} 
+                    <hr class="mb-4">
+                    <button type="button" class="btn btn-primary" (click)="addStudent()">Add</button>   
+
+                
 
                 </div>
-            
-                <div class="row">
-                    <div class="col-lg-4">
-                        <label for="">Email</label>
-                        <input type="text" name="email" [(ngModel)]="email" class="form-control-ml" required value="">
-                    </div>
-
-                    <div class="col-lg-4">
-                        <label for="">Address</label>
-                        <input type="text" name="address" [(ngModel)]="address" class="form-control-ml" required value="">
-                    </div>
-                </div>
-                {{ message }}
-                <hr class="mb-4">
-                <button type="button" class="btn btn-primary" (click)="addStudent()">Add</button>
             </div>
-        </form>
+         </form>
     </section>
 </main>

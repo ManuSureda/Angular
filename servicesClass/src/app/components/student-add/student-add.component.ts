@@ -8,29 +8,29 @@ import { StudentService } from 'src/app/services/student.service';
   styleUrls: ['./student-add.component.css']
 })
 export class StudentAddComponent implements OnInit {
-
-  firstName: string;
-  lastName: string;
-  dni: string;
-  email: string;
-  address: string;
-  message: string;
+  firstName : string;
+  lastName : string;
+  dni : string;
+  email : string;
+  address : string;
+  message : string;
 
   constructor(private studentService: StudentService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    
   }
 
   addStudent(){
-    let student = new Student;
+    let student = new Student();
     student.firstName = this.firstName;
     student.lastName = this.lastName;
     student.dni = this.dni;
     student.email = this.email;
     student.address = this.address;
 
-    this.studentService.add(student);
-
+    this.studentService.add(student)
+     
     this.message = "Student successfully added";
   }
 }
