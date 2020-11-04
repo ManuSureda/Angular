@@ -1,4 +1,4 @@
-import { NgModule  } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';//modulo de ruteo base, mas la libreria Routes para manipular rutas
 import { StudentAddComponent } from './components/student-add/student-add.component';
 import { StudentViewComponent } from './components/student-view/student-view.component';
@@ -10,7 +10,7 @@ const appRoutes: Routes = [
   { path: 'view/:id', component: StudentViewComponent },
   { path: 'list', component: StudentListComponent },
   { path: '', redirectTo: '/list', pathMatch: 'full' },
-  { path: '**', component : PageNotFoundComponent  } //el  ** es un comodin para cualquier ruta que no coincida con las anteriores
+  { path: '**', component : PageNotFoundComponent } //el  ** es un comodin para cualquier ruta que no coincida con las anteriores
 ];
 
 @NgModule({
