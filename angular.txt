@@ -18,6 +18,17 @@ ng serve -o
 CREAR UNA CLASS 
 ng generate class nombreCarpeta/nombreClass
 
+GENERAR COMPONENTE
+ng g component components/nombre-del-component
+
+GENERAR SERVICIO
+ng g service services/nombre-del-servicio
+
+GENERAR MODULO 
+ng g module nombreCarpeta/nombre-modulo 
+
+
+
 INSTALAR BOOSTRAP
 npm install bootstrap
 (despues tenes que ir al archivo "angular.json" 
