@@ -1,8 +1,8 @@
-<!-- <main class="py-5">
+<main class="py-5">
     <section id="listado" class="mb-5">
          <div class="container">
             <h2 class="mb-4">Product List</h2>   
-            <form >
+            <!-- <form > -->
                 <table class="table table-striped">
                     <thead class="thead-dark">
                     <tr>
@@ -10,20 +10,20 @@
                         <th scope="col">Product</th>
                         <th scope="col">Description</th>
                         <th scope="col">Price</th>
+                        <th scope="col">#</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr *ngFor="let product of productList">
-                        <th scope="row">{{ product.productCategory  }}</th>
+                    <tr *ngFor="let product of productList; index as i;">
+                        <th scope="row">{{ categoryList[i].description  }}</th>
                         <td>{{ product.name }}</td>
                         <td>{{ product.description }}</td>
                         <td>{{ product.price }}</td>
-                        <td><input type="checkbox">View Details</td>
+                        <td><input id="{{ product.productId }}" type="checkbox"><label for="{{ product.productId }}">Add</label> </td>
                     </tr>                  
                     </tbody>
                 </table>
-            </form>
+            <!-- </form> -->
          </div>
     </section>
-</main> -->
-<h1>alsdfkmasdlfk</h1>
+</main> 
